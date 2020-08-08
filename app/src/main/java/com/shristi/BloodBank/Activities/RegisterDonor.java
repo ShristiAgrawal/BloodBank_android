@@ -1,4 +1,4 @@
-package com.shristi.BloodBank;
+package com.shristi.BloodBank.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.shristi.BloodBank.Models.DonorDetails;
+import com.shristi.BloodBank.R;
 import com.shristi.BloodBank.Services.RetrofitService;
 
 import java.util.List;

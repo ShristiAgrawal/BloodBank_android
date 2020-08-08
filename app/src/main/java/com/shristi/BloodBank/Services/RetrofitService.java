@@ -12,6 +12,7 @@ import retrofit2.http.GET;
 import retrofit2.http.Headers;
 import retrofit2.http.POST;
 import retrofit2.http.Path;
+import retrofit2.http.Query;
 
 public interface RetrofitService {
     //@GET("")
@@ -25,4 +26,8 @@ public interface RetrofitService {
     })
     @POST("{bloodgroup}/")
     Call<DonorDetails> sendPosts(@Path ("bloodgroup") String bloodgroup,@Body DonorDetails posts);
+    @GET("{bloodgroup}/")
+    Call<List<DonorDetails>> getDonorsAvailable(
+            @Path("bloodgroup") String bg
+    );
 }

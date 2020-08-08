@@ -1,17 +1,22 @@
 package com.shristi.BloodBank.Models;
 
+import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 public class DonorDetails {
-    // @SerializedName("phone")
+    @SerializedName("phone")
+    @Expose
     private Integer phone;
     //@SerializedName("id")
     // private Integer id;
-    // @SerializedName("name")
+    @SerializedName("name")
+    @Expose
     private String name;
-    //  @SerializedName("address")
+    @SerializedName("address")
+    @Expose
     private String address;
-    //@SerializedName("bloodgroup")
+    @SerializedName("bloodgroup")
+    @Expose
     private String bloodgroup;
 
 

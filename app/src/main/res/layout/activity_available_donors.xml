@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.AvailableDonors">
+
+    <EditText
+        android:paddingTop="10dp"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:id="@+id/bg"
+        android:hint="Enter blood group here"
+        />
+    <Button
+        android:paddingTop="10dp"
+        android:text="Search"
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/search"
+        android:layout_toRightOf="@+id/bg"
+        android:gravity="center"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bg"
+        android:id="@+id/rv_donor"/>
+</RelativeLayout>
